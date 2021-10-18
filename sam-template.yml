@@ -1,0 +1,17 @@
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: A simple AWS Lambda for getting user records
+Resources:
+  GetSetsFx:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: target/<my jar file>
+      Handler: com.revature.get_player_stats.GetPlayerStatsHandler
+      Runtime: java8.al2
+      Description: Java function
+      MemorySize: 256
+      Timeout: 30
+      Tracing: Active
+      Policies:
+        - arn:aws:iam::aws:policy/<my bucket policy>
