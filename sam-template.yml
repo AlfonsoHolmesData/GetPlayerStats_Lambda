@@ -14,4 +14,4 @@ Resources:
       Timeout: 30
       Tracing: Active
       Policies:
-        - arn:aws:iam::aws:policy/<my bucket policy>
+        - arn:aws:iam::904493219403:policy/dynamodb-readonly-ama
