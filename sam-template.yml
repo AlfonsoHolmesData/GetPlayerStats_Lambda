@@ -6,7 +6,7 @@ Resources:
   GetSetsFx:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: target/original-Get-Player-Stats-1.0-SNAPSHOT.jar
+      CodeUri: target/Get-Player-Stats-1.0-SNAPSHOT.jar
       Handler: com.revature.get_player_stats.GetPlayerStatsHandler
       Runtime: java8.al2
       Description: Java function
