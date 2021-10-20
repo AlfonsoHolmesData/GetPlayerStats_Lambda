@@ -18,7 +18,7 @@ public class User {
     String   username;
     int      games_as_navigator;
     int      games_as_runner;
-    int      win_percentage;
+    float      win_percentage;
     int      wins;
 
     @DynamoDbPartitionKey
@@ -80,7 +80,7 @@ public class User {
         this.games_as_runner = games_as_runner;
     }
     @DynamoDbAttribute("win_percentage")
-    public int getWin_percentage() {
+    public float getWin_percentage() {
         return win_percentage;
     }
 

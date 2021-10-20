@@ -31,9 +31,11 @@ public class GetPlayerStatsHandler implements RequestHandler<APIGatewayProxyRequ
         try{
             List<User> all_users = userRepo.getAllUsers();
             response.setBody(mapper.toJson(all_users));
+            logger.log(mapper.toJson(all_users));
             response.setStatusCode(200);
         }catch(Exception e){
-            response.setBody(e.getMessage());
+            response.setBody("EXCEPTION FROM TRY BLOCK LINE 36: " + e.getMessage());
+            logger.log("EXCEPTION FROM TRY BLOCK LINE 36: " + e.getMessage() + " : RECORDED BY LAMBDA LOGGER \n");
             response.setStatusCode(400);
         }
         return response;
