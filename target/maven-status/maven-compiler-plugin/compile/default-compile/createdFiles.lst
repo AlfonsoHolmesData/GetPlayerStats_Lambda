@@ -1,4 +1,4 @@
-com\revature\get_player_stats\PlayerStats.class
-com\revature\get_player_stats\User.class
-com\revature\get_player_stats\UserRepository.class
+com\revature\get_player_stats\Documents\PlayerStats.class
+com\revature\get_player_stats\Documents\User.class
+com\revature\get_player_stats\Repository\UserRepository.class
 com\revature\get_player_stats\GetPlayerStatsHandler.class
